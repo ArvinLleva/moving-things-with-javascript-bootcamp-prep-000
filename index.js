@@ -8,7 +8,7 @@ function moveDodgerRight() {
   // we don't use dodger.style.right because style.left is on the HTML document
   var right = parseInt(rightNumbers, 10); //parseInt(string, radix)
  
-  if (right > 0) { // this prevents the box from going all the way to the right
+  if (right < 400) { // this prevents the box from going all the way to the right
     dodger.style.left = `${right + 1}px`; 
   }
 }
