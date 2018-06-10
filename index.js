@@ -9,7 +9,7 @@ function moveDodgerRight() {
   var right = parseInt(rightNumbers, 10); //parseInt(string, radix)
  
   if (right > 0) { // this prevents the box from going all the way to the right
-    dodger.style.left = `${right + 1}px`; 
+    dodger.style.right = `${right + 1}px`; 
   }
 }
 document.addEventListener('keydown', function(e){
