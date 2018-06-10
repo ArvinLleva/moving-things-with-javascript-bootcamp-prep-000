@@ -3,11 +3,11 @@
 var dodger = document.getElementById('dodger')
 
 function moveDodgerRight() {
-  var rightNumbers = dodger.style.right.replace('px', ''); // replace(searchvalue, newvalue)
+  var rightNumbers = dodger.style.left.replace('px', ''); // replace(searchvalue, newvalue)
   var right = parseInt(rightNumbers, 10); //parseInt(string, radix)
  
   if (right > 0) {
-    dodger.style.right = `${right + 1}px`;
+    dodger.style.left = `${right + 1}px`;
   }
 }
 
