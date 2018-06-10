@@ -12,6 +12,7 @@ function moveDodgerRight() {
 }
 
 document.addEventListener('keydown', function(e){
-  if(e.which ===39) // 39 is the ascii key-value for right
+  if(e.which === 39){ // 39 is the ascii key-value for right
   moveDodgerRight();
+  }
 })
